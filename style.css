@@ -1,3 +1,4 @@
+@font-face{font-family:'NokiaPureTextLight';src:url('http://static.here.sc/maps/1984/core/font/nokiapuretextlight-webfont.woff') format('woff'),url('http://static.here.sc/maps/1984/core/font/nokiapuretextlight-webfont.ttf') format('truetype'),url('http://static.here.sc/maps/1984/core/font/nokiapuretextlight-webfont.svg#NokiaLarge-Light') format('svg');src:url('http://static.here.sc/maps/1984/core/font/nokiapuretextlight-webfont.eot')\9}
 body {
     background: #fff;
     font-family: 'Helvetica', sans-serif;
@@ -6,6 +7,28 @@ body {
     color: #111;
 }
 
+/*** Logo HEADER ***/
+.mask {
+    position: fixed;
+    top: 0;
+    left: 0;
+    max-width: none;
+    height: 67px;
+    background: #124191;
+    background: rgba(18, 65, 145, 0.9);
+    width: 100%;
+    z-index: 2;
+}
+.logo {
+    position: absolute;
+    bottom: 0;
+    margin: 0 0 0 15px;
+    width: 96px;
+    height: 51px;
+    background: transparent;
+    direction: ltr;
+    opacity: 0.8;
+}
 /*** HEADER ***/
 
 h1 {
@@ -14,7 +37,7 @@ h1 {
 
 body>header {
     background: #111;
-    padding: 5px 0;
+    padding: 72px 0 0 0;
     box-shadow: 0 4px 4px #ccc;
     margin: 0;
     position: relative;
@@ -116,8 +139,7 @@ section {
 }
 
 header {
-    font-family: arvo, serif;
-    background: transparent;
+    font-family: 'NokiaPureTextLight',"Lucida Grande","Lucida Sans Unicode",Arial,Helvetica,sans-serif;    background: transparent;
     font-weight: normal;
     margin: 40px 0;
 }
@@ -223,7 +245,7 @@ a:hover, a:active {
 }
 
 .schedule time {
-    font-family: arvo, serif;
+    font-family: 'NokiaPureTextLight',"Lucida Grande","Lucida Sans Unicode",Arial,Helvetica,sans-serif;    background: transparent;
     display: inline-block;
     width: 50px;
     text-align: right;
@@ -232,7 +254,7 @@ a:hover, a:active {
 
 /*** DEMOS ***/
 dt {
-    font-family: arvo, serif;
+    font-family: 'NokiaPureTextLight',"Lucida Grande","Lucida Sans Unicode",Arial,Helvetica,sans-serif;    background: transparent;
     font-size: 20px;
     padding-bottom: 20px;
 }
