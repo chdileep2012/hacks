@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+
+        <title>HERE Winter Hackathon</title>
+
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/hackathon.css" id="theme">
+
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+
+        <!--[if lt IE 9]>
+        <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+        <div class="reveal">
+            <div class="here">
+                <img src="http://static.here.sc/maps/1984/core/features/intropage/img/logo.png" alt="Here logo">
+            </div>
+
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides hackathon">
+
+                <section>
+                    <h1>hacks.here.com</h1>
+                    <h2><a href="http://here.com">HERE</a> Winter Hackathon</h2>
+                    <img src="stuff/here-hacks-hamster.png" class="icon">
+                    <p class="date">
+                        19.01.2013
+                    </p>
+                    <p class="author">
+                        Massimiliano Marcon / @mmarcon
+                    </p>
+                </section>
+
+                <section>
+                    <h2>Agenda</h2>
+                    <ul class="schedule">
+                        <li><time datetime="09:00">9:00</time> Breakfast and Networking</li>
+                        <li><time datetime="09:45">9:45</time> Welcome + Ideas</li>
+                        <li><time>10:15</time> Hacking session begins</li>
+                        <li><time>12:45</time> Lunch Break</li>
+                        <li><time>18:30</time> Demos</li>
+                        <li><time>20:30</time> Afterparty</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>HERE APIs</h1>
+                    </section>
+                    <section>
+                        <h2><a href="http://developer.here.net/javascript_api">JavaScript API</a></h2>
+                        <p>Maps, Places,<br>Positioning (Geocoding/Reverse Geocoding),<br>Routing, Heatmaps, KML</p>
+                        <pre><code class="javascript">var map, domElement;
+domElement = document.getElementById("map");
+map = new nokia.maps.map.Display(domElement);</code></pre>
+                    </section>
+                    <section>
+                        <h2><a href="http://developer.here.net/rest_api">REST API</a></h2>
+                        <p>Map Image, Places</p>
+                        <img src="http://m.nok.it?app_id=_peU-uCkpj8ovkzFGNU&app_code=gBoUkAMoxoqIWfxWA5DuMQ&nord&w=300&h=150&z=10&t=1" width="300" height="150">
+                        <pre><code class="comment">http://m.nok.it?app_id=_peU-uCkpj8ovkzFGNU&app_code=gBoUkAMoxoqIWfxWA5DuMQ&nord</code></pre>
+                    </section>
+                    <section>
+                        <h2><a href="http://developer.here.net/mobile_html5">Mobile HTML5</a></h2>
+                        <p>Maps, Search, Routing, Offline tiles,<br>UI Framework optimized for mobile</p>
+                        <pre><code class="javascript">var map = new nokia.mh5.components.Map({
+    schema: "normal.day",
+    center: {
+        latitude: 52.53049,
+        longitude: 13.385124
+    },
+    zoom: 17
+}</code></pre>      </section>
+                    <section class="wp">
+                        <h2><span></span><a href="http://developer.here.net/windows_phone">Windows Phone SDK</a></h2>
+                        <p>If WP is your thing, feel free to build<br>a native app.</p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>API Credentials</h1>
+                    </section>
+                    <section>
+                        <h1>1</h1>
+                        <h2>Register at <a href="https://www.developer.nokia.com/Profile/Join.xhtml">Join Nokia Developer</a>.</h2>
+                    </section>
+                    <section>
+                        <h1>2</h1>
+                        <h2>Use your Nokia Developer user name and password to log in at
+                            <a href="http://developer.here.net/">developer.here.net</a> to enter the "API Registration Home" page.</h2>
+                    </section>
+                    <section>
+                        <h1>3</h1>
+                        <h2>Follow the on-screen instructions to complete the registration process.</h2>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Resources</h1>
+                    </section>
+
+                    <section>
+                        <h2><a href="http://developer.here.net">developer.here.net</a></h2>
+                        <p>The official HERE documentation<br>for all the public APIs.</p>
+                        <p>Have a look at <a href="http://developer.here.net/javascript_api_explorer">API Explorer</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2><a href="https://github.com/mmarcon/HERE-JavaScript-API-Boilerplate">HERE JavaScript API Boilerplate</a></h2>
+                        <p>Very simple boilerplate to get started.</p>
+                    </section>
+
+                    <section>
+                        <h2><a href="https://github.com/heremaps/examples">HERE Maps Examples</a></h2>
+                        <p>Simple mashups with Flickr and Instagram APIs.</p>
+                        <p>Magnify Glass and X-Ray examples.</p>
+                    </section>
+
+                    <section>
+                        <h2>Need some inspiration?</h2>
+                        <p><a href="https://github.com/heremaps/hacks/wiki/APIs">Here</a> are some APIs you can
+                            use for your hacks!</p>
+                        <p>On <a href="http://hacks.here.com">hacks.here.com</a> you can also find some hacks
+                            we've made in the past.</p>
+                    </section>
+
+                    <section>
+                        <h2><a href="http://jhere.net">jHERE</a></h2>
+                        <p><a href="http://twitter.com/mmarcon">unofficial</a> jQuery API for HERE Maps.</p>
+                        <p>Has a <a href="http://bin.jhere.net">PLAYGROUND</a> for rapid
+                            prototyping.</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>Nokia Loan Program</h1>
+                    <img src="stuff/lumias.png" class="icon" style="border-bottom: 3px solid rgba(0,0,0,0.1)">
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Projects &amp; Demos</h1>
+                        <p>Please post your projects<br>and teams on this page:<br><a href="http://j.mp/herehacks-1901">http://j.mp/herehacks-1901</a></p>
+                    </section>
+                    <section>
+                        <h1>Anything you build is yours.</h1>
+                    </section>
+
+                    <section>
+                        <blockquote>
+                            <p>
+                                Participating in hackathons is the best way to become pitch perfect for VCs.
+                            </p>
+                            <footer>
+                                Drew Olanoff, Tech Crunch
+                            </footer>
+                        </blockquote>
+                    </section>
+
+                    <section>
+                        <h1>For the winner</h1>
+                        <img src="stuff/900.png" class="icon">
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h1>Tips</h1>
+                    </section>
+
+                    <section data-state="cors" class="cors">
+                        <h2>CORS</h2>
+                        <p><a href="http://en.wikipedia.org/wiki/Cross-origin_resource_sharing">CORS on Wikipedia</a></p>
+                    </section>
+                    <section data-state="limits" class="limits">
+                        <h2>LIMITS</h2>
+                        <p>Cache when possible.</p>
+                    </section>
+                    <section data-state="deploy" class="deploy">
+                        <h2>Deploy</h2>
+                        <p>Nodester, AppFog, Nodejitsu, GH Pages, etc.</p>
+                    </section>
+                </section>
+
+                <section>
+                    <h1>Afterparty</h1>
+                    <p>20-ish at <a class="url" href="http://here.com/germany/berlin/bar-pub/dogma--276u33dc-f53f9bdab3e146f68f51d42661ee825a">Dogma</a>.</p>
+                    <div class="vcard dogma-map">
+                        <p class="fn"><a class="url" href="http://here.com/germany/berlin/bar-pub/dogma--276u33dc-f53f9bdab3e146f68f51d42661ee825a">Dogma</a><p>
+                        <p class="adr">
+                            <span class="street-address">Knaackstraße 98</span><br>
+                            <span class="locality">Berlin</span><br>
+                            <span class="postal-code">10407</span><br>
+                            <span class="country-name">Germany</span>
+                        </p>
+                    </div>
+                </section>
+
+                <section>
+                    <h1>Open Source Snacks</h1>
+                    <h2><a href="http://opensnacks.com">opensnacks.com</a> by <a href="http://twitter.com/thingsinjars">@thingsinjars</a></h2>
+                    <img src="stuff/hero-roast.jpg">
+                </section>
+
+                <section>
+                    <h1>And now hack!</h1>
+                    <img src="stuff/hackathonicon.blue.png" class="icon">
+                </section>
+            </div>
+
+        </div>
+
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+
+        <script>
+
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                rollingLinks: false,
+
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                    // { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+        </script>
+
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jhere.custom.js"></script>
+        <script>
+            $(window).on('load', function(){
+            var map =  $('.dogma-map'),
+                center = [52.536, 13.400],
+                pin = [52.54, 13.414];
+            map.jHERE({type: 'satellite', center: center, zoom: 14, enable:[]})
+                   .jHERE('marker', pin, {fill: '#d63c88'})
+                   .jHERE('marker', [52.53, 13.385], {fill: 'rgb(0,104,179)'});
+        });
+        </script>
+
+    </body>
+</html>

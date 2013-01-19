@@ -1,0 +1,148 @@
+/**
+ * Default theme for reveal.js.
+ *
+ * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
+ */
+
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+
+// Include theme-specific fonts
+@font-face {
+    font-family: 'League Gothic';
+    src: url('../../lib/font/league_gothic-webfont.eot');
+    src: url('../../lib/font/league_gothic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../lib/font/league_gothic-webfont.woff') format('woff'),
+         url('../../lib/font/league_gothic-webfont.ttf') format('truetype'),
+         url('../../lib/font/league_gothic-webfont.svg#LeagueGothicRegular') format('svg');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+// Override theme settings (see ../template/settings.scss)
+$heading1TextShadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 0 20px 20px rgba(0,0,0,.15);
+
+// $backgroundColor: rgba(18, 65, 145, 0.9);
+$backgroundColor: #222;
+
+.max .me {
+    font-size: 90%;
+    padding-top: 50px;
+}
+
+.max .twitter {
+    background: url(../../stuff/twitter.png) no-repeat left center;
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+    position: relative;
+    top: 5px;
+}
+
+.max blockquote {
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.max blockquote footer {
+    font-size: 50%;
+    text-align: right;
+}
+
+.max blockquote:before {
+    position: absolute;
+    left: 10px;
+    top: 18px;
+    font-size: 200%;
+}
+
+.max blockquote:after {
+    position: absolute;
+    right: 10px;
+    bottom: -12px;
+    font-size: 200%;
+}
+
+.max .venue-map {
+    border: 5px solid #fff;
+    box-shadow: 0 0 6px #333;
+    height: 300px;
+    margin-bottom: 10px;
+    background: #fff;
+}
+
+.max .venue-map p {
+    display: none;
+}
+
+.max .small {
+    font-size: 60%;
+}
+
+.max .ideas ul {
+    max-width: 500px;
+}
+
+.max .ideas li {
+    display: block;
+    margin: 0 20px;
+    float: left;
+}
+
+.max .ideas img {
+    border: 5px solid #fff;
+    box-shadow: 0 0 6px #333;
+    margin-bottom: 10px;
+}
+
+.max .ideas figure {
+    text-align: center;
+    line-height: 1.2;
+}
+
+.max .ideas figcaption {
+    font-size: 24px;
+    max-width: 200px;
+    text-align: center;
+    display: block;
+    height: 70px;
+}
+
+.max img.lumias {
+    border: none;
+    box-shadow: none;
+    background: transparent;
+}
+
+.max .links {
+    width: 500px;
+    margin: auto;
+}
+
+.max .links dt {
+    text-align: left;
+}
+
+.max .links dd {
+    text-align: left;
+    font-size: 90%;
+    color: #0BD;
+}
+
+.max .devherenet, .max h2.end{
+    padding-top: 40px;
+    color: #0BD;
+}
+
+// Theme template ------------------------------
+@import "../template/theme";
+// ---------------------------------------------
