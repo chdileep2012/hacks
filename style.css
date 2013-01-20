@@ -283,6 +283,20 @@ dd {
     line-height: 1.3;
 }
 
+/*** GALLERY ***/
+.gallery {
+    text-align: center;
+}
+
+.gallery li {
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    margin: 0 10px 10px 0;
+    border: 3px solid #fff;
+    box-shadow: 0 0 4px #ccc;
+}
+
 /*** FOOTER ***/
 footer {
     text-align: center;
