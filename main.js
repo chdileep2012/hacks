@@ -115,4 +115,7 @@ $(window).on('load', function(){
         map.jHERE('type', 'pt');
     });
     render();
+    $(".fancybox").fancybox({
+        padding: 0
+    });
 });
