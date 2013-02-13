@@ -92,6 +92,7 @@ $(window).on('load', function(){
     var address = [$('.street-address').text(), $('.locality').text(), $('.postal-code').text(), $('.country-name').text()].join(', '),
         map =  $('.venue-map');
     $('.email').attr('href', 'mailto:herehacks@nokia.com').text('herehacks@nokia.com');
+    $.jHERE.defaultCredentials('sp2ZKFC3Dd2pmz7FgVML', 'Ivkv5cFg3xnXhq0z9v--wQ');
     $.jHERE.geocode(address, function(location){
         //In the very unfortunate case of geocode failing, fallback to using the approx. coordinates.
         location = location || [52.53, 13.385];
